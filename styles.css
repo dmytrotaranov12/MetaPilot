@@ -229,8 +229,8 @@ body::before {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1400px;
   z-index: 5;
   cursor: pointer;
   transition: transform var(--transition-smooth), width var(--transition-smooth);
@@ -252,7 +252,7 @@ body::before {
 /* Hover state - GIF rises and shrinks */
 .gif-wrapper:hover {
   transform: translateX(-50%) translateY(8%);
-  width: 75%;
+  width: 95%;
 }
 
 .gif-wrapper:hover .gif-preview {
