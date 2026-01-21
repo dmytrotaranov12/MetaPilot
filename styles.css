@@ -300,9 +300,9 @@ body::before {
 /* Button moves up to take subheader place */
 .landing.scrolled .cta-button {
   position: fixed;
-  top: 5%;
+  top: 3%;
   left: 50%;
-  transform: translateX(-50%) scale(0.9);
+  transform: translateX(-50%) scale(1.1);
   margin: 0;
   box-shadow:
     0 0 2.5rem var(--color-primary-glow),
