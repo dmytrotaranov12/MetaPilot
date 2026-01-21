@@ -29,6 +29,20 @@
       <img src="gif/gif-blue.gif" alt="MetaPilot Facebook posting interface preview" class="gif-preview">
     </div>
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const landing = document.querySelector('.landing');
+      const SCROLL_THRESHOLD = 50; // Pixels to trigger effect
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > SCROLL_THRESHOLD) {
+          landing.classList.add('scrolled');
+        } else {
+          landing.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

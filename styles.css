@@ -71,7 +71,7 @@ body::before {
 /* Landing Container */
 .landing {
   position: relative;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -251,39 +251,39 @@ body::before {
 }
 
 /* Hover state - GIF rises and shrinks */
-.gif-wrapper:hover {
+/* Scrolled state - GIF rises and expands to be fully visible */
+.landing.scrolled .gif-wrapper {
   transform: translateX(-50%) translateY(8%);
   width: 95%;
 }
 
-.gif-wrapper:hover .gif-preview {
+.landing.scrolled .gif-wrapper .gif-preview {
+  clip-path: inset(20% 3% 3% 3% round 1rem);
   box-shadow:
     0 -2rem 6rem rgba(0, 0, 0, 0.5),
     0 0 4rem var(--color-primary-glow);
 }
 
 /* ========================================
-   Global Hover States via :has()
-   When GIF is hovered, transform other elements
+   Global Scrolled States
+   When page is scrolled, transform other elements
    ======================================== */
 
-/* Hide subheader when GIF is hovered */
-.landing:has(.gif-wrapper:hover) .hero-subtitle {
+/* Hide subheader when scrolled */
+.landing.scrolled .hero-subtitle {
   opacity: 0;
   transform: translateY(-1rem);
   pointer-events: none;
 }
 
-/* Move header up slightly when GIF is hovered */
-/* Move header to TOP and scale down when GIF is hovered */
-.landing:has(.gif-wrapper:hover) .hero-title {
+/* Move header to TOP and scale down when scrolled */
+.landing.scrolled .hero-title {
   transform: translateY(-60%) scale(0.7);
   transform-origin: top center;
 }
 
-/* Enlarge button when GIF is hovered */
 /* Button moves up to take subheader place */
-.landing:has(.gif-wrapper:hover) .cta-button {
+.landing.scrolled .cta-button {
   transform: translateY(-18rem) scale(1.1);
   box-shadow:
     0 0 2.5rem var(--color-primary-glow),

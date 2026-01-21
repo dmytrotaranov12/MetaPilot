@@ -1,0 +1,30 @@
+Context: Im trying to build fancy, client oriented and viral landing page for my SaaS.
+Main Idea of the SaaS: My SaaS is an automated social media content publishing platform that runs on autopilot for small businesses and creators. Customers purchase a subscription plan (e.g., "1 Facebook post per week"), complete a simple onboarding questionnaire about their brand and preferences, and authorize their social media accounts via OAuth. The system then automatically generates and publishes content on their behalf based on their brand voice and inputs, requiring zero ongoing effort from the customer. The entire workflow—from payment to content creation to scheduled publishing—is fully automated using no-code tools. Each customer is completely isolated in a secure multi-tenant architecture, allowing the platform to scale to hundreds of users simultaneously.
+Main purpose of landing page: convince visitors to sign up bu clickeing a button which will redirect them to another website
+
+Steps you need to follow:
+1. Create a git repository with name "MetaPilot" and add ONLY necessary file. Do not forget to use .gitignore file and put there files according to best practices
+2. Create Landing Page using @frontend_design skill. You can inspire by:
+- [https://www.jasper.ai/](https://www.jasper.ai/)
+- [https://taplio.com/](https://taplio.com/)
+- [https://linear.app/](https://linear.app/)
+- [https://www.tella.com/](https://www.tella.com/) 
+Just make cool and catchy design. What I want to see on the page (only this, nothing else, no other elements):
+- Header: You Grow the Business. Our AI Grows the Brand.
+- Subheader: Our AI analyzes your Facebook history to master your unique brand voice, then posts for you automatically—exactly as often as you choose
+- Button: Get Started
+- Gif: use gif ![from path gif/gif-blue.gif](gif/gif-blue.gif)
+
+Steps to implement one by one regarding to landing page:
+- Create header and subheader at the top. 
+Requirements: Subheader should be italic. Highligt 'Our AI analyzes your Facebook history' and 'posts for you automatically' in some cool style which will attract attention
+- Add button "Get Started" at the middle of the page
+Requirements: Button should be well designed according to general style of landing page, should DO NO action
+- Add GIF element
+Requirements: GIF is fixed to the bottom of the screen, horizontally centered, and spans almost the full viewport width. Initially, half of it is hidden below the viewport edge. On hover, it animates upward and bicame smallet, Subheader should be hidden, button should be a little bit bigger and go a little but up together with header, GIF should NEVER cover Button and Header. The image itself is cropped using clip-path inset to remove outer edges (more from top, less from bottom, symmetrical on sides) with subtle rounded corners. The wrapper has pointer cursor and sits below the CTA button in z-index stacking.
+
+You can proceed to the next step ONLY once you done 2 thidgs:
+- Veryfy you meet all requirements using @webapp_testing skill
+- Commit code to repo
+
+DO NOT FROCEED IF AT LEAST ONE POINT IS NOT FINISHED

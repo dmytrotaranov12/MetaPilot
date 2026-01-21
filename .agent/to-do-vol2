@@ -1,0 +1,12 @@
+It's refinement stage. You should do next steps for improvements:
+1. In header I just want to see all sentances from the new line. Like this:
+First line: You Grow the Business 
+Second Line: Our AI Grows the Brand
+2. Gif Element: On hover it animates upward and bicame smaller. 
+But it should NOT cover the botton and button should not cover gif element on hover. Subheader should dessapear (which is correct right now), but header should go UP and button should change position and stay BETWEEN header and gif element
+
+You can proceed to the next step ONLY once you done 2 thidgs:
+- Veryfy you meet all requirements using @webapp_testing skill
+- Commit code to repo
+
+DO NOT FROCEED IF AT LEAST ONE POINT IS NOT FINISHED
