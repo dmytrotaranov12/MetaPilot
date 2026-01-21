@@ -98,6 +98,7 @@ body::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: transform var(--transition-smooth);
 }
 
 /* Hero Subtitle */
@@ -274,14 +275,18 @@ body::before {
 }
 
 /* Move header up slightly when GIF is hovered */
-.landing:has(.gif-wrapper:hover) .hero-content {
-  transform: translateY(-3%);
+/* Move header to TOP and scale down when GIF is hovered */
+.landing:has(.gif-wrapper:hover) .hero-title {
+  transform: translateY(-60%) scale(0.7);
+  transform-origin: top center;
 }
 
 /* Enlarge button when GIF is hovered */
+/* Button moves up to take subheader place */
 .landing:has(.gif-wrapper:hover) .cta-button {
-  transform: translateY(-0.5rem) scale(1.08);
+  transform: translateY(-18rem) scale(1.1);
   box-shadow:
     0 0 2.5rem var(--color-primary-glow),
     0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  z-index: 30;
 }
