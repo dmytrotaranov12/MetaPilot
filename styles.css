@@ -278,15 +278,25 @@ body::before {
 
 /* Move header to TOP and scale down when scrolled */
 .landing.scrolled .hero-title {
-  transform: translateY(-60%) scale(0.7);
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  transform: scale(0.6);
   transform-origin: top center;
+  z-index: 40;
+  margin: 0;
 }
 
 /* Button moves up to take subheader place */
 .landing.scrolled .cta-button {
-  transform: translateY(-18rem) scale(1.1);
+  position: fixed;
+  top: 7.5rem;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  margin: 0;
   box-shadow:
     0 0 2.5rem var(--color-primary-glow),
     0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-  z-index: 30;
+  z-index: 40;
 }
