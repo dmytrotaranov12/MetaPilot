@@ -85,6 +85,7 @@ body::before {
   margin: 0 auto;
   z-index: 10;
   transition: transform var(--transition-smooth);
+  transform: translateY(-15vh);
 }
 
 /* Hero Title */
@@ -274,6 +275,11 @@ body::before {
   opacity: 0;
   transform: translateY(-1rem);
   pointer-events: none;
+}
+
+/* Reset hero-content transform when scrolled so fixed children position correctly */
+.landing.scrolled .hero-content {
+  transform: none;
 }
 
 /* Move header to TOP and scale down when scrolled */
