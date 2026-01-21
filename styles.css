@@ -85,7 +85,7 @@ body::before {
   margin: 0 auto;
   z-index: 10;
   transition: transform var(--transition-smooth);
-  transform: translateY(-13vh);
+  transform: translateY(-10vh);
 }
 
 /* Hero Title */
@@ -308,4 +308,28 @@ body::before {
     0 0 2.5rem var(--color-primary-glow),
     0 0.5rem 2rem rgba(0, 0, 0, 0.3);
   z-index: 40;
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+@media (max-width: 768px) {
+
+  /* Reset lift on mobile/tablet to prevent cutoff */
+  .hero-content {
+    transform: none;
+    padding-top: 15vh;
+    /* Use padding instead of transform for spacing */
+  }
+
+  /* Adjust scrolled button for mobile */
+  .landing.scrolled .cta-button {
+    top: 5%;
+    transform: translateX(-50%) scale(1);
+  }
+
+  /* Ensure GIF doesn't cover content on short screens */
+  .gif-wrapper {
+    max-width: 100%;
+  }
 }
