@@ -40,7 +40,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
   scroll-behavior: smooth;
 }
 
@@ -232,7 +232,7 @@ body::before {
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   width: 100%;
-  max-width: 1400px;
+  max-width: 87.5rem;
   z-index: 5;
   cursor: pointer;
   transition: transform var(--transition-smooth), width var(--transition-smooth);
