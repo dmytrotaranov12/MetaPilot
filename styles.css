@@ -282,7 +282,7 @@ body::before {
   transform: none;
 }
 
-/* Move header to TOP and scale down when scrolled */
+/* Hide header when scrolled */
 .landing.scrolled .hero-title {
   position: fixed;
   top: 1rem;
@@ -292,12 +292,15 @@ body::before {
   transform-origin: top center;
   z-index: 40;
   margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
 }
 
 /* Button moves up to take subheader place */
 .landing.scrolled .cta-button {
   position: fixed;
-  top: 7.5rem;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
   margin: 0;
